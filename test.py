@@ -1,6 +1,6 @@
 import socket
 
-s1 = 'https://docs.python.org/dev/library/urllib.parse.html?highlight=s'
+s1 = "http://www.runoob.com/python3/python3-comment.html"
 a1 = 15
 if(isinstance(a1,str)):
     print(a1)
