@@ -3,6 +3,10 @@ import socket
 from urllib.parse import urlparse
 from urllib.request import urlretrieve
 import os
+import tkinter as tk
+from tkinter import filedialog
+ 
+
 
 
 def uri_validator(x):
@@ -69,7 +73,14 @@ def save_img(img_url,file_name,file_path='images'):
     except Exception as e:
         print ('错误 ：',e)
 
-with open('776875059.json',encoding='utf-8') as f:
+root = tk.Tk()
+root.withdraw()
+ 
+file_path = tk.filedialog.askopenfilename()
+
+with open(file_path,encoding='utf-8') as f:
+#with open('776875059.json',encoding='utf-8') as f:
+
 
     data = json.load(f)
     #allprint(data)
